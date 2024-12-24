@@ -71,7 +71,7 @@ def create_chart():
     if "frequency_chart" in chart_sheet.pictures:
         chart_sheet.pictures["frequency_chart"].delete()
 
-    if argument == "评分":
+    if argument == "评论条数":
         # 获取数据并处理
         data = get_chart_data(game_name, argument, days_number, datetime_value)
         data_long = data.melt(id_vars='日期', var_name='评分',value_name='评论数')

@@ -11,8 +11,8 @@ import datetime as dt
 
 
 config = load_config(read_json_file.json_path)
-base_url = config['base_url']
-headers = config['headers']
+base_url = config['config']['base_url']
+headers = config['config']['headers']
 
 
 def fetch_to_review():

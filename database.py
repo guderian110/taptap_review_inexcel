@@ -1,7 +1,5 @@
 from pathlib import Path
 import sqlalchemy
-from sqlalchemy.sql import text
-from sqlalchemy import text
 from sqlalchemy.engine import Engine
 from sqlalchemy import create_engine,Column, String, Integer, DateTime,func
 from sqlalchemy import event
